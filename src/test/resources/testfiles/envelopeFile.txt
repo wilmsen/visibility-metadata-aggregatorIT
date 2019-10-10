@@ -1,0 +1,34 @@
+{
+	 "envelope": {
+		 "senderAddress": "ZZ:ACC10684",
+		 "transactionId": "d00aba88-a1a4-4793-b42e-550c44344ceb",
+		 "documentType": 810,
+		 "processId": "d00aba88-a1a4-4793-b42e-550c44344ceb",
+		 "envelopeVersion": "00200",
+		 "controlNumber": 133333331,
+		 "containingParentType": "FILE",
+		 "receiverAddress": "ZZ:ACC10685",
+		 "directDocumentCount": 0,
+		 "sentTime": "12:05:44",
+		 "eventId": "1eec7236-b38a-4994-b124-ebddb7f79d6a",
+		 "introspectionSource": "MDCS",
+		 "productionTestFlag": "Test",
+		 "taskId": "e64cecd7-06b2-4359-af23-e84b2ef5fa0b",
+		 "containingParentLevel": "INTERCHANGE",
+		 "documentFunctionalClassification": "",
+		 "eventTimestamp": 1564747544337,
+		 "envelopeLevel": "INTERCHANGE",
+		 "directEnvelopeCount": 0,
+		 "containingParentId": "Q14E-201908000000000155856659",
+		 "segmentTerminator": "0x0A",
+		 "envelopeId": "79f98f34-1e2c-48f2-9715-75ba0705fbf1",
+		 "sentDate": "2019-08-02",
+		 "envelopeType": "ISA",
+		 "fileInfo": {
+			 "payloadType": "DSM",
+			 "payloadId": "Q14E-201908000000000155856659"
+		},
+		 "contentKeys": [
+		]
+	}
+}

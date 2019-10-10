@@ -1,0 +1,20 @@
+{
+   "offset":0,
+   "processId":"f8e443cf-63ab-4fdc-88f1-f751c38ae51f",
+   "envelopeId":"7a97c5a8-7b95-446f-b571-0060df0b3b77",
+   "eventId":"93c26661-02d7-47f9-93f7-12c124017598",
+   "eventTimestamp":"1565713833754",
+   "errorInfo":{
+      "isPayloadRelated":true,
+      "errorCode":"100",
+      "internalErrorMessage":"Interchange contained an unrecognized format, or the envelope was not compliant. If the end segment was missing the interchanges after this interchange will not be processed.",
+      "externalErrorMessage":"Test Message"
+   },
+   "documentId":null,
+   "errorId":"494b5916-a4f0-4078-b50e-89d7218c3577",
+   "position":0,
+   "taskId":"45cf747c-11d6-4b85-b897-ee82435c70f1",
+   "transactionId":"f8e443cf-63ab-4fdc-88f1-f751c38ae51f",
+   "contentFileId":"Q14D-201601000000031020140204",
+   "errorLevel":"ENVELOPE_HIGHEST"
+}

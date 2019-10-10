@@ -1,0 +1,32 @@
+{
+	 "envelope": {
+		 "containingParentId": "11d15753-50f2-4c16-9469-54e70490269a",
+		 "senderAddress": ":SPORT22",
+		 "contentKeys": [
+		],
+		 "documentType": 850,
+		 "directEnvelopeCount": 0,
+		 "directDocumentCount": 0,
+		 "envelopeLevel": "FUNCTIONAL_GROUP",
+		 "envelopeVersion": "004010",
+		 "introspectionSource": "MDCS",
+		 "productionTestFlag": "Test",
+		 "sentDate": "2019-09-11",
+		 "processId": "8f0faf4e-18b9-46eb-8490-f7cc574a4b65",
+		 "envelopeId": "b1cd10f4-ecd8-4692-aad4-8020be774e8f",
+		 "documentFunctionalClassification": "PO",
+		 "fileInfo": {
+			 "payloadId": "Q22F-201909000000000132871815",
+			 "payloadType": "DSM"
+		},
+		 "transactionId": "8f0faf4e-18b9-46eb-8490-f7cc574a4b65",
+		 "receiverAddress": ":CLI22",
+		 "segmentTerminator": "0x0A",
+		 "containingParentType": "ENVELOPE",
+		 "envelopeType": "ISA",
+		 "containingParentLevel": "INTERCHANGE",
+		 "sentTime": "17:32:22",
+		 "controlNumber": 970,
+		 "taskId": "f27731bf-415d-4791-80a1-2fc6b249bb72"
+	}
+}

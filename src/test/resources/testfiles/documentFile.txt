@@ -1,0 +1,38 @@
+{
+                 "taskId": "26256baf-9770-4c0d-991c-1ffb2bf64911",
+                 "senderAddress": "ZZ:ACC10684",
+                 "controlNumberLevel1": 133333331,
+                 "transactionId": "d00aba88-a1a4-4793-b42e-550c44344ceb",
+                 "containingParentLevel": "FUNCTIONAL_GROUP",
+                 "documentType": 810,
+                 "processId": "d00aba88-a1a4-4793-b42e-550c44344ceb",
+                 "controlNumberLevel2": 1,
+                 "envelopeVersion": "",
+                 "containingParentType": "ENVELOPE",
+                 "controlNumber": "0001",
+                 "receiverAddress": "ZZ:ACC10685",
+                 "sentTime": "12:05:44",
+                 "containingParentId": "de4d93a4-09cd-472f-9292-48bc6bf17050",
+                 "documentStandard": "X",
+                 "sentDate": "2019-08-02",
+                 "introspectionSource": "MDCS",
+                 "documentStandardVersion": "004010",
+                 "fileInfo": {
+                         "payloadType": "DSM",
+                         "payloadId": "Q14E-201908000000000155856659"
+                },
+                 "documentId": "0df97c7e-5c26-4fac-8e32-ed8fcba6589e",
+                 "contentKeys": [
+                        {
+                                 "keyType": "STRING",
+                                 "keyName": 76,
+                                 "keyValue": "IN834923021"
+                        },
+                        {
+                                 "keyType": "STRING",
+                                 "keyName": 324,
+                                 "keyValue": "99AKDF9DAL393"
+                        }
+                ]
+        }
+}

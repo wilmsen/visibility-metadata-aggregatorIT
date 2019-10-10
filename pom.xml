@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.opentext.bn.content</groupId>
+	<artifactId>visibility-metadata-aggregatorIT</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Citrus Integration Test</name>
+
+
+	<properties>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<spring.boot.version>2.1.4.RELEASE</spring.boot.version>
+		<slf4j.version>1.7.25</slf4j.version>
+		<testng.version>6.14.3</testng.version>
+		<citrus.version>2.8.0</citrus.version>
+		<visibility.eventinjector.version>0.0.1-SNAPSHOT</visibility.eventinjector.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.opentext.bn</groupId>
+			<artifactId>visibility-event-injector</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>${slf4j.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.skyscreamer</groupId>
+			<artifactId>jsonassert</artifactId>
+			<version>1.5.0</version>
+		</dependency>
+		
+	<!-- https://mvnrepository.com/artifact/org.apache.avro/avro -->
+<dependency>
+    <groupId>org.apache.avro</groupId>
+    <artifactId>avro</artifactId>
+    <version>1.9.1</version>
+</dependency>
+
+  
+<dependency>
+	<groupId>tech.allegro.schema.json2avro</groupId>
+	<artifactId>converter</artifactId>
+	<version>0.2.5</version>
+</dependency>
+<!-- Thanks for using https://jar-download.com -->
+
+
+		<!-- Test scoped dependencies -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Citrus -->
+		<dependency>
+			<groupId>com.consol.citrus</groupId>
+			<artifactId>citrus-core</artifactId>
+			<version>${citrus.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.consol.citrus</groupId>
+			<artifactId>citrus-java-dsl</artifactId>
+			<version>${citrus.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.consol.citrus</groupId>
+			<artifactId>citrus-http</artifactId>
+			<version>${citrus.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.consol.citrus</groupId>
+			<artifactId>citrus-kafka</artifactId>
+			<version>${citrus.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.confluent</groupId>
+			<artifactId>kafka-avro-serializer</artifactId>
+			<version>5.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.11</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<repositories>
+		<!-- <repository> <id>consol-labs-snapshots</id> <url>http://labs.consol.de/maven/snapshots-repository/</url> 
+			<snapshots> <enabled>true</enabled> <updatePolicy>interval:10080</updatePolicy> 
+			</snapshots> </repository> -->
+		<repository>
+			<id>confluent</id>
+			<url>http://packages.confluent.io/maven/</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.consol.citrus.mvn</groupId>
+				<artifactId>citrus-maven-plugin</artifactId>
+				<version>${citrus.version}</version>
+				<configuration>
+					<targetPackage>com.opentext.bn.content</targetPackage>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.1</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<forkMode>once</forkMode>
+					<failIfNoTests>false</failIfNoTests>
+					<excludes>
+						<exclude>**/IT*.java</exclude>
+						<exclude>**/*IT.java</exclude>
+					</excludes>
+					<workingDirectory>${project.build.directory}</workingDirectory>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<configuration>
+					<verbose>true</verbose>
+					<images>
+						<image>
+							<alias>citrus-admin</alias>
+							<name>consol/citrus-admin:1.0.3</name>
+							<run>
+								<namingStrategy>alias</namingStrategy>
+								<ports>
+									<port>8080:8080</port>
+								</ports>
+								<volumes>
+									<from>
+										<image>application</image>
+									</from>
+								</volumes>
+								<env>
+									<CITRUS_ADMIN_PROJECT_HOME>/maven</CITRUS_ADMIN_PROJECT_HOME>
+								</env>
+								<wait>
+									<http>
+										<url>http://localhost:8080/setup</url>
+										<method>GET</method>
+										<status>200</status>
+									</http>
+									<time>60000</time>
+									<shutdown>500</shutdown>
+								</wait>
+								<log>
+									<enabled>true</enabled>
+									<color>green</color>
+								</log>
+							</run>
+						</image>
+						<image>
+							<alias>application</alias>
+							<name>application:${project.version}</name>
+							<build>
+								<assembly>
+									<descriptorRef>project</descriptorRef>
+								</assembly>
+							</build>
+						</image>
+					</images>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.20</version>
+				<executions>
+					<execution>
+						<id>integration-tests</id>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

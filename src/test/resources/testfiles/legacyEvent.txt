@@ -1,0 +1,26 @@
+{
+	 "appFileCount": 0,
+	 "bypassFileCount": 0,
+	 "comFileCount": 0,
+	 "errorCount": 0,
+	 "inputEdiDocumentCount": 0,
+	 "inputEdiFileCount": 0,
+	 "inputInterchangeCount": 0,
+	 "inputUdfDocumentCount": 0,
+	 "inputUdfFileCount": 0,
+	 "introspectionSessionNumber": "000009KPG",
+	 "introspectionSource": "TGTS",
+	 "outputEdiDocumentCount": 0,
+	 "outputEdiFileCount": 0,
+	 "outputInterchangeCount": 0,
+	 "outputUdfDocumentCount": 0,
+	 "outputUdfFileCount": 0,
+	 "processId": "44d73792-0edf-4fb3-9941-c5f3d40379m8",
+	 "rejectedFileCount": 0,
+	 "taskId": "ded996e31c02d74f-1000016b50dcae57-1000000000000045",
+	 "transactionId": "44d73792-0edf-4fb3-9941-c5f3d40379m8",
+	 "xifInfo": {
+		 "payloadId": "Q14E-201907000000000155237565",
+		 "payloadType": "DSM"
+	}
+}
