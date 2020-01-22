@@ -1,45 +1,45 @@
 {
-  "transactionContext": {
-    "correlationId": "c2624292-0d01-430d-9a3e-eb188d9af2d7",
-    "documentType": "BIN",
-    "eventId": "93c26661-02d7-47f9-93f7-12c124017578",
-    "eventTimestamp": 1562948825047,
-    "parentProcessId": "44d73792-0edf-4fb3-9941-c5f3d40379b0",
-    "priority": "RT",
-    "processId": "44d73792-0edf-4fb3-9941-c5f3d40379b0",
-    "processingCell": "US122",
-    "processingComputeZone": "US1",
-    "processingRegion": "US",
-    "receiverAddress": "MS:ADPARTMDCS",
-    "senderAddress": "MS:ADHUBMDCS",
-    "serviceInstanceId": "Node14",
-    "serviceName": "TGMS",
-   "transactionId": "93c26661-02d7-47f9-93f7-12c124017578",
-    "taskId": "93c26661-02d7-47f9-93f7-12c124017578",
-    "testProdIndicator": "Test",
-    "transactionTags": [
-      "iFTP server BFTPSERVER on host q14iftp2batch.qa.gxsonline.net and port 65045"
-    ]
-  },
-  "payloadRef": {
-    "payloadId": "Q14E-201906000000000152341995",
-    "payloadType": "DSM"
-  },
-  "transferInfo": {
-    "deliveryReceipt": "Outbound - Customer to TP",
-    "firstByteTimestamp": 1562948825047,
-    "isAck": false,
-    "lastByteTimestamp": 1562948826047,
-    "payloadSizeInBytes": 90879,
-    "protocol": "IFTP",
-    "remoteHost": "q14iftp2batch.qa.gxsonline.net",
-    "retryCount": 0,
-    "sessionStartTimestamp": 1562948825047,
-    "transferDetails": [
-      {
-        "key": "ilognumber",
-        "value": "6551319999"
-      }
-    ]
-  }
+         "transactionContext": {
+                 "correlationId": "c2624292-0d01-430d-9a3e-eb188d9af2d7",
+                 "documentType": 850,
+                 "eventId": "93c26661-02d7-47f9-93f7-12c124017578",
+                 "eventTimestamp": 1562948825047,
+                 "priority": "RT",
+                 "processId": "44d73792-0edf-4fb3-9941-c5f3d40379b0",
+                 "processingCell": "US122",
+                 "processingComputeZone": "US1",
+                 "processingRegion": "US",
+                 "serviceInstanceId": "Node14",
+                 "serviceName": "TGMS",
+                 "transactionId": "672233772223322752225672345222234522234221123422122",
+                 "taskId": "93c26661-02d7-47f9-93f7-12c1240175781",
+                 "testProdIndicator": "Test",
+                 "transactionTags": [
+                        "iFTP server BFTPSERVER on host q14iftp2batch.qa.gxsonline.net and port 65045"
+                ]
+        },
+         "payloadRef": {
+                 "payloadId": "Q22F-201910000000000139553821",
+                 "payloadType": "DSM"
+        },
+         "transferInfo": {
+                 "deliveryReceipt": "Outbound - Customer to TP",
+                 "firstByteTimestamp": 1562948825047,
+                 "isAck": false,
+                 "lastByteTimestamp": 1562948826047,
+                 "filename": "TEST_FILE_IDOC.000009KPM",
+                 "payloadSizeInBytes": 90879,
+                 "protocol": "IFTP",
+                 "remoteHost": "q14iftp2batch.qa.gxsonline.net",
+                 "retryCount": 0,
+                 "receiverMailbox": "AAJ01038",
+                 "senderMailbox": "AAJ01035",
+                 "sessionStartTimestamp": 1562948825047,
+                 "transferDetails": [
+                        {
+                                 "key": "ilognumber",
+                                 "value": 6551319999
+                        }
+                ]
+        }
 }

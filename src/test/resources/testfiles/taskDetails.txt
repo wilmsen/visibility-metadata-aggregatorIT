@@ -1,0 +1,18 @@
+{
+  "payloadRef": {
+    "payloadId": "Q22F-201910000000000139553821",
+    "payloadType": "DSM"
+  },
+  "processId": "string",
+  "processingStages": [
+    
+  ],
+  "taskId": "93c26661-02d7-47f9-93f7-12c1240175781",
+  "tasksDetails": [
+    {
+      "key": "com.file.name",
+      "value": "abc.123"
+    }
+  ],
+  "transactionId": "9311-02d7-6767-93f7-12c124017578111211199"
+}

@@ -51,7 +51,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.opentext.bn.converters.avro.entity.DeliveryCompletedEvent;
+import com.opentext.bn.converters.avro.entity.DocumentEvent;
 import com.opentext.bn.converters.avro.entity.ReceiveCompletedEvent;
+import com.opentext.bn.converters.avro.entity.TaskDetailsEvent;
 
 public class EventInjectorIT extends TestNGCitrusTestRunner {
 
@@ -98,7 +101,7 @@ public class EventInjectorIT extends TestNGCitrusTestRunner {
 
 			});
 
-			// sleep(60000);
+			sleep(60000);
 
 			receive(receiveMessageBuilder -> {
 				receiveMessageBuilder.endpoint(receiveCompletedKafkaEndpoint)
@@ -149,6 +152,128 @@ public class EventInjectorIT extends TestNGCitrusTestRunner {
 						});
 
 			});
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new ValidationException("this test failed : {} ", e);
+
+		}
+
+	}
+	
+	@Test
+	@CitrusTest
+	public void process_TaskDetailsIT() {
+
+		try {
+
+			//String receiveCompletedFilepath = "src/test/resources/testfiles/receiveCompleted001.txt";
+			String controlFile = "src/test/resources/testfiles/taskDetails.txt";
+			String receiveCompletedJsonString;
+
+			variable("transactionId", UUID.randomUUID().toString());
+			
+				
+			receiveCompletedJsonString = new String(Files.readAllBytes(Paths.get(controlFile)));
+
+
+			ObjectMapper mapper = new ObjectMapper();
+			TaskDetailsEvent receiveCompleteEvent = mapper.readValue(receiveCompletedJsonString,
+					TaskDetailsEvent.class);
+
+			send(sendMessageBuilder -> {
+
+				sendMessageBuilder.endpoint(citrusKafkaEndpoint).message(new KafkaMessage(receiveCompleteEvent)
+						.topic("visibility.platform.taskdetails").messageKey(receiveCompleteEvent.getTransactionId()));
+
+			});
+
+			sleep(60000);
+
+										
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new ValidationException("this test failed : {} ", e);
+
+		}
+
+	}
+	
+	
+	@Test
+	@CitrusTest
+	public void process_DocumentIT() {
+
+		try {
+
+			//String receiveCompletedFilepath = "src/test/resources/testfiles/receiveCompleted001.txt";
+			String controlFile = "src/test/resources/testfiles/documentFile.txt";
+			String receiveCompletedJsonString;
+
+			variable("transactionId", UUID.randomUUID().toString());
+			
+				
+			receiveCompletedJsonString = new String(Files.readAllBytes(Paths.get(controlFile)));
+
+
+			ObjectMapper mapper = new ObjectMapper();
+			DocumentEvent receiveCompleteEvent = mapper.readValue(receiveCompletedJsonString,
+					DocumentEvent.class);
+
+			send(sendMessageBuilder -> {
+
+				sendMessageBuilder.endpoint(citrusKafkaEndpoint).message(new KafkaMessage(receiveCompleteEvent)
+						.topic("visibility.introspection.document").messageKey(receiveCompleteEvent.getTransactionId()));
+
+			});
+
+			sleep(60000);
+
+										
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new ValidationException("this test failed : {} ", e);
+
+		}
+
+	}
+	
+
+	@Test
+	@CitrusTest
+	public void process_deliveryEventIT() {
+
+		try {
+
+			//String receiveCompletedFilepath = "src/test/resources/testfiles/receiveCompleted001.txt";
+			String controlFile = "src/test/resources/testfiles/deliveryEvent.txt";
+			String receiveCompletedJsonString;
+
+			variable("transactionId", UUID.randomUUID().toString());
+			
+				
+			receiveCompletedJsonString = new String(Files.readAllBytes(Paths.get(controlFile)));
+
+
+			ObjectMapper mapper = new ObjectMapper();
+			DeliveryCompletedEvent receiveCompleteEvent = mapper.readValue(receiveCompletedJsonString,
+					DeliveryCompletedEvent.class);
+
+			send(sendMessageBuilder -> {
+
+				sendMessageBuilder.endpoint(citrusKafkaEndpoint).message(new KafkaMessage(receiveCompleteEvent)
+						.topic("visibility.platform.deliverycompleted").messageKey(receiveCompleteEvent.getTransactionContext().getTransactionId()));
+
+			});
+
+			sleep(60000);
+
+										
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
