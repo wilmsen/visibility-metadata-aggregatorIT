@@ -1,0 +1,71 @@
+{
+         "transactionContext": {
+                 "correlationId": "c0bfb38b-85db-48e7-8901-bdac2a8aa412",
+                 "documentType": 810,
+                 "eventId": "ed48ef84-7853-415f-adbd-ca47358d3b03",
+                 "eventTimestamp": 1571940233017,
+                 "ownershipIndicator": "SENDER",
+                 "parentProcessId": "daeb2f47-d848-4a3b-bd7a-08f8618335dc",
+                 "priority": "RT",
+                 "processId": "9a59e69e-985e-4f5d-94d4-098a257bc8e3",
+                 "processingCell": "US122",
+                 "processingComputeZone": "US1",
+                 "processingRegion": "US",
+                 "receiverAddress": "MS:ADPARTMDCS",
+                 "senderAddress": "MS:ADHUBMDCS",
+                 "serviceInstanceId": "Node11",
+                 "serviceName": "TGMS",
+                 "solutionId": "ADHUBMDCS.COM.01",
+                 "taskId": "5ff1c8c0-a78e-43e2-8916-3c34c6d389cd",
+                 "testProdIndicator": "Test",
+                 "transactionId": "6722337722233227522256723452222345222342211234221",
+                 "transactionTags": [
+                        "Delivery of the output file"
+                ]
+        },
+         "payloadRef": {
+                 "payloadId": "Q14D-201601000000032720103632231",
+                 "payloadType": "DSM"
+        },
+         "transferInfo": {
+                 "deliveryReceipt": "FILE DELIVERED BY FTP PROTOCOL TO CLIENT",
+                 "filename": "TEST_FILE_IDOC.000009KPM",
+                 "firstByteTimestamp": 1571940233017,
+                 "isAck": false,
+                 "lastByteTimestamp": 1571940233017,
+                 "payloadSizeInBytes": 3380,
+                 "protocol": "SFTP",
+                 "receiverMailbox": "AAG70078",
+                 "remoteHost": "19.02.08.00",
+                 "remotePort": 22,
+                 "retryCount": 0,
+                 "senderMailbox": "AAG70078",
+                 "sessionStartTimestamp": 1571940233018,
+                 "transferDetails": [
+                        {
+                                 "key": "parentservicereference",
+                                 "value": "014000000021156427"
+                        },
+                        {
+                                 "key": "aprf",
+                                 "value": 810
+                        },
+                        {
+                                 "key": "snrf",
+                                 "value": 5629196107
+                        },
+                        {
+                                 "key": "ilognumber",
+                                 "value": 469306021
+                        },
+                        {
+                                 "key": "orchactiveLink",
+                                 "value": "http://q1s1dui.qa.gxsonline.net/orchWeb/jsf/process.xhtml"
+                        },
+                        
+                        {        "key": "admin_deliveryMode",
+                                 "value": "orch"
+                        }
+                ]
+        }
+}
