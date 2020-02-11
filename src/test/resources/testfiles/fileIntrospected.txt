@@ -1,0 +1,40 @@
+{
+  "appFileCount": 0,
+  "assets": [
+    {
+      "assetDescription": "",
+      "assetId": "var_assetId",
+      "assetName": "",
+      "assetType": "",
+      "xifInfo": {
+        "payloadId": "var_payloadId",
+        "payloadType": "DSM"
+      }
+    }
+  ],
+  "bypassFileCount": 0,
+  "comFileCount": 0,
+  "errorCount": 0,
+  "eventId": "var_eventId",
+  "eventTimestamp": 1553145248,
+  "inputEdiDocumentCount": 0,
+  "inputEdiFileCount": 0,
+  "inputInterchangeCount": 0,
+  "xifInfo": {
+    "payloadId": "var_payloadId",
+    "payloadType": "DSM"
+  },
+  "inputUdfDocumentCount": 0,
+  "inputUdfFileCount": 0,
+  "introspectionSessionNumber": "000009KPG",
+  "introspectionSource": "TGTS",
+  "outputEdiDocumentCount": 0,
+  "outputEdiFileCount": 0,
+  "outputInterchangeCount": 0,
+  "outputUdfDocumentCount": 0,
+  "outputUdfFileCount": 0,
+  "processId": "var_transactionId",
+  "rejectedFileCount": 0,
+  "taskId": "var_taskId",
+  "transactionId": "var_transactionId"
+}

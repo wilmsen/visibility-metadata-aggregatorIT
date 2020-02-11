@@ -1,0 +1,20 @@
+{
+	"senderAddress": "ADHUBMDCS",
+	"senderQualifier": "MS",
+	"receiverAddress": "ADPARTMDCS",
+	"receiverQualifier": "MS",
+	"response": "{
+		\"senderAddressBuId\": \"GC22698817YV\",
+		\"senderAddressRootBuId\": null,
+		\"receiverAddressBuId\": \"GC28464997QM\",
+		\"receiverAddressRootBuId\": null
+	}",
+}
+{
+	"senderAddress": "AAAAAA",
+	"senderQualifier": "MS",
+	"receiverAddress": "BBBBBB",
+	"receiverQualifier": "MS",
+	"response": "{	}",
+}
+
