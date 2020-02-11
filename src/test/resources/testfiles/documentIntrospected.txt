@@ -1,0 +1,45 @@
+{
+    "containingParentId": "de4d93a4-09cd-472f-9292-48bc6bf17050",
+    "containingParentLevel": "INTERCHANGE",
+    "containingParentType": "FILE",
+    "contentKeys": [
+	    {
+	       "keyType": "STRING",
+	       "keyName": 76,
+	       "keyValue": "IN834923021"
+	    },
+	    {
+	       "keyType": "STRING",
+	       "keyName": 324,
+	       "keyValue": "99AKDF9DAL393"
+	    }
+    ],
+    "controlNumber": "BB:XXXYYYZZZ",
+    "controlNumberLevel1": "",
+    "controlNumberLevel2": "",
+    "documentId": "var_documentId",
+    "documentStandard": "X",
+    "documentStandardVersion": "004010",
+    "documentType": "810",
+    "envelopeVersion": "",
+    "eventId": "var_eventId",
+    "eventTimestamp": 1553145248,
+    "fileInfo": {
+      "payloadId": "var_payloadId",
+      "payloadType": "DSM"
+    },
+    "functionalCodeEnvelopeLevel1": "",
+    "functionalCodeEnvelopeLevel2": "",
+    "introspectionSource": "MDCS",
+    "processId": "var_transactionId",
+    "receiverAddress": "BB:XXXYYYZZZ",
+    "receiverAddressEnvelopeLevel1": "",
+    "receiverAddressEnvelopeLevel2": "",
+    "senderAddress": "AA:BBCCDS",
+    "senderAddressEnvelopeLevel1": "",
+    "senderAddressEnvelopeLevel2": "",
+    "sentDate": "2019-11-20",
+    "sentTime": "12:05:44",
+    "taskId": "var_taskId",
+    "transactionId": "var_transactionId"
+}

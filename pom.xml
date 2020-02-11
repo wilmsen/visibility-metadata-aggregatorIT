@@ -151,6 +151,24 @@
 			<artifactId>activation</artifactId>
 			<version>1.1.1</version>
 		</dependency>
+		
+		<dependency>
+    		<groupId>com.github.cliftonlabs</groupId>
+    		<artifactId>json-simple</artifactId>
+    		<version>3.1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.dozer</groupId>
+			<artifactId>dozer</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>com.google.guava</groupId>
+    		<artifactId>guava</artifactId>
+    		<version>12.0</version>
+		</dependency>
 
 	</dependencies>
 

@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6914522633736003919L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DocumentEvent\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"containingParentId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"containingParentType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"containingParentLevel\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"controlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlNumberLevel1\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlNumberLevel2\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contentKeys\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContentKey\",\"fields\":[{\"name\":\"keyName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"keyValue\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"keyType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}}],\"default\":null},{\"name\":\"documentId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"documentStandard\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"documentStandardVersion\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"documentType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"envelopeVersion\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"introspectionSource\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"receiverAddress\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"senderAddress\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"sentDate\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sentTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taskId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transactionId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"fileInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PayloadRef\",\"fields\":[{\"name\":\"payloadId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"payloadType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}],\"default\":null}]}");
+  private static final long serialVersionUID = 3024669351375042586L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DocumentEvent\",\"namespace\":\"com.opentext.bn.converters.avro.entity\",\"fields\":[{\"name\":\"businessDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"containingParentId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"containingParentType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"containingParentLevel\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"controlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlNumberLevel1\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlNumberLevel2\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contentKeys\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContentKey\",\"fields\":[{\"name\":\"keyName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"keyValue\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"keyType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}}],\"default\":null},{\"name\":\"documentId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"documentStandard\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"documentStandardVersion\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"documentType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"envelopeVersion\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventTimestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"fileInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PayloadRef\",\"fields\":[{\"name\":\"payloadId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"payloadType\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}],\"default\":null},{\"name\":\"introspectionSource\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"introspectionType\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"IntrospectionType\",\"symbols\":[\"INTROSPECTED\",\"GENERATED\"]}],\"default\":null},{\"name\":\"processId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"receiverAddress\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"senderAddress\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"sentDate\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sentTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taskId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transactionId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"senderAddressEnvelopeLevel1\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"receiverAddressEnvelopeLevel1\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"functionalCodeEnvelopeLevel1\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"senderAddressEnvelopeLevel2\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"receiverAddressEnvelopeLevel2\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"functionalCodeEnvelopeLevel2\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -51,6 +51,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
     return DECODER.decode(b);
   }
 
+   private java.lang.String businessDocumentId;
    private java.lang.String containingParentId;
    private java.lang.String containingParentType;
    private java.lang.String containingParentLevel;
@@ -63,7 +64,11 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
    private java.lang.String documentStandardVersion;
    private java.lang.String documentType;
    private java.lang.String envelopeVersion;
+   private java.lang.String eventId;
+   private java.lang.Long eventTimestamp;
+   private com.opentext.bn.converters.avro.entity.PayloadRef fileInfo;
    private java.lang.String introspectionSource;
+   private com.opentext.bn.converters.avro.entity.IntrospectionType introspectionType;
    private java.lang.String processId;
    private java.lang.String receiverAddress;
    private java.lang.String senderAddress;
@@ -71,7 +76,12 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
    private java.lang.String sentTime;
    private java.lang.String taskId;
    private java.lang.String transactionId;
-   private com.opentext.bn.converters.avro.entity.PayloadRef fileInfo;
+   private java.lang.String senderAddressEnvelopeLevel1;
+   private java.lang.String receiverAddressEnvelopeLevel1;
+   private java.lang.String functionalCodeEnvelopeLevel1;
+   private java.lang.String senderAddressEnvelopeLevel2;
+   private java.lang.String receiverAddressEnvelopeLevel2;
+   private java.lang.String functionalCodeEnvelopeLevel2;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -82,6 +92,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
 
   /**
    * All-args constructor.
+   * @param businessDocumentId The new value for businessDocumentId
    * @param containingParentId The new value for containingParentId
    * @param containingParentType The new value for containingParentType
    * @param containingParentLevel The new value for containingParentLevel
@@ -94,7 +105,11 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
    * @param documentStandardVersion The new value for documentStandardVersion
    * @param documentType The new value for documentType
    * @param envelopeVersion The new value for envelopeVersion
+   * @param eventId The new value for eventId
+   * @param eventTimestamp The new value for eventTimestamp
+   * @param fileInfo The new value for fileInfo
    * @param introspectionSource The new value for introspectionSource
+   * @param introspectionType The new value for introspectionType
    * @param processId The new value for processId
    * @param receiverAddress The new value for receiverAddress
    * @param senderAddress The new value for senderAddress
@@ -102,9 +117,15 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
    * @param sentTime The new value for sentTime
    * @param taskId The new value for taskId
    * @param transactionId The new value for transactionId
-   * @param fileInfo The new value for fileInfo
+   * @param senderAddressEnvelopeLevel1 The new value for senderAddressEnvelopeLevel1
+   * @param receiverAddressEnvelopeLevel1 The new value for receiverAddressEnvelopeLevel1
+   * @param functionalCodeEnvelopeLevel1 The new value for functionalCodeEnvelopeLevel1
+   * @param senderAddressEnvelopeLevel2 The new value for senderAddressEnvelopeLevel2
+   * @param receiverAddressEnvelopeLevel2 The new value for receiverAddressEnvelopeLevel2
+   * @param functionalCodeEnvelopeLevel2 The new value for functionalCodeEnvelopeLevel2
    */
-  public DocumentEvent(java.lang.String containingParentId, java.lang.String containingParentType, java.lang.String containingParentLevel, java.lang.String controlNumber, java.lang.String controlNumberLevel1, java.lang.String controlNumberLevel2, java.util.List<com.opentext.bn.converters.avro.entity.ContentKey> contentKeys, java.lang.String documentId, java.lang.String documentStandard, java.lang.String documentStandardVersion, java.lang.String documentType, java.lang.String envelopeVersion, java.lang.String introspectionSource, java.lang.String processId, java.lang.String receiverAddress, java.lang.String senderAddress, java.lang.String sentDate, java.lang.String sentTime, java.lang.String taskId, java.lang.String transactionId, com.opentext.bn.converters.avro.entity.PayloadRef fileInfo) {
+  public DocumentEvent(java.lang.String businessDocumentId, java.lang.String containingParentId, java.lang.String containingParentType, java.lang.String containingParentLevel, java.lang.String controlNumber, java.lang.String controlNumberLevel1, java.lang.String controlNumberLevel2, java.util.List<com.opentext.bn.converters.avro.entity.ContentKey> contentKeys, java.lang.String documentId, java.lang.String documentStandard, java.lang.String documentStandardVersion, java.lang.String documentType, java.lang.String envelopeVersion, java.lang.String eventId, java.lang.Long eventTimestamp, com.opentext.bn.converters.avro.entity.PayloadRef fileInfo, java.lang.String introspectionSource, com.opentext.bn.converters.avro.entity.IntrospectionType introspectionType, java.lang.String processId, java.lang.String receiverAddress, java.lang.String senderAddress, java.lang.String sentDate, java.lang.String sentTime, java.lang.String taskId, java.lang.String transactionId, java.lang.String senderAddressEnvelopeLevel1, java.lang.String receiverAddressEnvelopeLevel1, java.lang.String functionalCodeEnvelopeLevel1, java.lang.String senderAddressEnvelopeLevel2, java.lang.String receiverAddressEnvelopeLevel2, java.lang.String functionalCodeEnvelopeLevel2) {
+    this.businessDocumentId = businessDocumentId;
     this.containingParentId = containingParentId;
     this.containingParentType = containingParentType;
     this.containingParentLevel = containingParentLevel;
@@ -117,7 +138,11 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
     this.documentStandardVersion = documentStandardVersion;
     this.documentType = documentType;
     this.envelopeVersion = envelopeVersion;
+    this.eventId = eventId;
+    this.eventTimestamp = eventTimestamp;
+    this.fileInfo = fileInfo;
     this.introspectionSource = introspectionSource;
+    this.introspectionType = introspectionType;
     this.processId = processId;
     this.receiverAddress = receiverAddress;
     this.senderAddress = senderAddress;
@@ -125,34 +150,49 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
     this.sentTime = sentTime;
     this.taskId = taskId;
     this.transactionId = transactionId;
-    this.fileInfo = fileInfo;
+    this.senderAddressEnvelopeLevel1 = senderAddressEnvelopeLevel1;
+    this.receiverAddressEnvelopeLevel1 = receiverAddressEnvelopeLevel1;
+    this.functionalCodeEnvelopeLevel1 = functionalCodeEnvelopeLevel1;
+    this.senderAddressEnvelopeLevel2 = senderAddressEnvelopeLevel2;
+    this.receiverAddressEnvelopeLevel2 = receiverAddressEnvelopeLevel2;
+    this.functionalCodeEnvelopeLevel2 = functionalCodeEnvelopeLevel2;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return containingParentId;
-    case 1: return containingParentType;
-    case 2: return containingParentLevel;
-    case 3: return controlNumber;
-    case 4: return controlNumberLevel1;
-    case 5: return controlNumberLevel2;
-    case 6: return contentKeys;
-    case 7: return documentId;
-    case 8: return documentStandard;
-    case 9: return documentStandardVersion;
-    case 10: return documentType;
-    case 11: return envelopeVersion;
-    case 12: return introspectionSource;
-    case 13: return processId;
-    case 14: return receiverAddress;
-    case 15: return senderAddress;
-    case 16: return sentDate;
-    case 17: return sentTime;
-    case 18: return taskId;
-    case 19: return transactionId;
-    case 20: return fileInfo;
+    case 0: return businessDocumentId;
+    case 1: return containingParentId;
+    case 2: return containingParentType;
+    case 3: return containingParentLevel;
+    case 4: return controlNumber;
+    case 5: return controlNumberLevel1;
+    case 6: return controlNumberLevel2;
+    case 7: return contentKeys;
+    case 8: return documentId;
+    case 9: return documentStandard;
+    case 10: return documentStandardVersion;
+    case 11: return documentType;
+    case 12: return envelopeVersion;
+    case 13: return eventId;
+    case 14: return eventTimestamp;
+    case 15: return fileInfo;
+    case 16: return introspectionSource;
+    case 17: return introspectionType;
+    case 18: return processId;
+    case 19: return receiverAddress;
+    case 20: return senderAddress;
+    case 21: return sentDate;
+    case 22: return sentTime;
+    case 23: return taskId;
+    case 24: return transactionId;
+    case 25: return senderAddressEnvelopeLevel1;
+    case 26: return receiverAddressEnvelopeLevel1;
+    case 27: return functionalCodeEnvelopeLevel1;
+    case 28: return senderAddressEnvelopeLevel2;
+    case 29: return receiverAddressEnvelopeLevel2;
+    case 30: return functionalCodeEnvelopeLevel2;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -161,30 +201,49 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: containingParentId = (java.lang.String)value$; break;
-    case 1: containingParentType = (java.lang.String)value$; break;
-    case 2: containingParentLevel = (java.lang.String)value$; break;
-    case 3: controlNumber = (java.lang.String)value$; break;
-    case 4: controlNumberLevel1 = (java.lang.String)value$; break;
-    case 5: controlNumberLevel2 = (java.lang.String)value$; break;
-    case 6: contentKeys = (java.util.List<com.opentext.bn.converters.avro.entity.ContentKey>)value$; break;
-    case 7: documentId = (java.lang.String)value$; break;
-    case 8: documentStandard = (java.lang.String)value$; break;
-    case 9: documentStandardVersion = (java.lang.String)value$; break;
-    case 10: documentType = (java.lang.String)value$; break;
-    case 11: envelopeVersion = (java.lang.String)value$; break;
-    case 12: introspectionSource = (java.lang.String)value$; break;
-    case 13: processId = (java.lang.String)value$; break;
-    case 14: receiverAddress = (java.lang.String)value$; break;
-    case 15: senderAddress = (java.lang.String)value$; break;
-    case 16: sentDate = (java.lang.String)value$; break;
-    case 17: sentTime = (java.lang.String)value$; break;
-    case 18: taskId = (java.lang.String)value$; break;
-    case 19: transactionId = (java.lang.String)value$; break;
-    case 20: fileInfo = (com.opentext.bn.converters.avro.entity.PayloadRef)value$; break;
+    case 0: businessDocumentId = (java.lang.String)value$; break;
+    case 1: containingParentId = (java.lang.String)value$; break;
+    case 2: containingParentType = (java.lang.String)value$; break;
+    case 3: containingParentLevel = (java.lang.String)value$; break;
+    case 4: controlNumber = (java.lang.String)value$; break;
+    case 5: controlNumberLevel1 = (java.lang.String)value$; break;
+    case 6: controlNumberLevel2 = (java.lang.String)value$; break;
+    case 7: contentKeys = (java.util.List<com.opentext.bn.converters.avro.entity.ContentKey>)value$; break;
+    case 8: documentId = (java.lang.String)value$; break;
+    case 9: documentStandard = (java.lang.String)value$; break;
+    case 10: documentStandardVersion = (java.lang.String)value$; break;
+    case 11: documentType = (java.lang.String)value$; break;
+    case 12: envelopeVersion = (java.lang.String)value$; break;
+    case 13: eventId = (java.lang.String)value$; break;
+    case 14: eventTimestamp = (java.lang.Long)value$; break;
+    case 15: fileInfo = (com.opentext.bn.converters.avro.entity.PayloadRef)value$; break;
+    case 16: introspectionSource = (java.lang.String)value$; break;
+    case 17: introspectionType = (com.opentext.bn.converters.avro.entity.IntrospectionType)value$; break;
+    case 18: processId = (java.lang.String)value$; break;
+    case 19: receiverAddress = (java.lang.String)value$; break;
+    case 20: senderAddress = (java.lang.String)value$; break;
+    case 21: sentDate = (java.lang.String)value$; break;
+    case 22: sentTime = (java.lang.String)value$; break;
+    case 23: taskId = (java.lang.String)value$; break;
+    case 24: transactionId = (java.lang.String)value$; break;
+    case 25: senderAddressEnvelopeLevel1 = (java.lang.String)value$; break;
+    case 26: receiverAddressEnvelopeLevel1 = (java.lang.String)value$; break;
+    case 27: functionalCodeEnvelopeLevel1 = (java.lang.String)value$; break;
+    case 28: senderAddressEnvelopeLevel2 = (java.lang.String)value$; break;
+    case 29: receiverAddressEnvelopeLevel2 = (java.lang.String)value$; break;
+    case 30: functionalCodeEnvelopeLevel2 = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
+
+  /**
+   * Gets the value of the 'businessDocumentId' field.
+   * @return The value of the 'businessDocumentId' field.
+   */
+  public java.lang.String getBusinessDocumentId() {
+    return businessDocumentId;
+  }
+
 
   /**
    * Gets the value of the 'containingParentId' field.
@@ -295,11 +354,47 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
 
 
   /**
+   * Gets the value of the 'eventId' field.
+   * @return The value of the 'eventId' field.
+   */
+  public java.lang.String getEventId() {
+    return eventId;
+  }
+
+
+  /**
+   * Gets the value of the 'eventTimestamp' field.
+   * @return The value of the 'eventTimestamp' field.
+   */
+  public java.lang.Long getEventTimestamp() {
+    return eventTimestamp;
+  }
+
+
+  /**
+   * Gets the value of the 'fileInfo' field.
+   * @return The value of the 'fileInfo' field.
+   */
+  public com.opentext.bn.converters.avro.entity.PayloadRef getFileInfo() {
+    return fileInfo;
+  }
+
+
+  /**
    * Gets the value of the 'introspectionSource' field.
    * @return The value of the 'introspectionSource' field.
    */
   public java.lang.String getIntrospectionSource() {
     return introspectionSource;
+  }
+
+
+  /**
+   * Gets the value of the 'introspectionType' field.
+   * @return The value of the 'introspectionType' field.
+   */
+  public com.opentext.bn.converters.avro.entity.IntrospectionType getIntrospectionType() {
+    return introspectionType;
   }
 
 
@@ -367,11 +462,56 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
 
 
   /**
-   * Gets the value of the 'fileInfo' field.
-   * @return The value of the 'fileInfo' field.
+   * Gets the value of the 'senderAddressEnvelopeLevel1' field.
+   * @return The value of the 'senderAddressEnvelopeLevel1' field.
    */
-  public com.opentext.bn.converters.avro.entity.PayloadRef getFileInfo() {
-    return fileInfo;
+  public java.lang.String getSenderAddressEnvelopeLevel1() {
+    return senderAddressEnvelopeLevel1;
+  }
+
+
+  /**
+   * Gets the value of the 'receiverAddressEnvelopeLevel1' field.
+   * @return The value of the 'receiverAddressEnvelopeLevel1' field.
+   */
+  public java.lang.String getReceiverAddressEnvelopeLevel1() {
+    return receiverAddressEnvelopeLevel1;
+  }
+
+
+  /**
+   * Gets the value of the 'functionalCodeEnvelopeLevel1' field.
+   * @return The value of the 'functionalCodeEnvelopeLevel1' field.
+   */
+  public java.lang.String getFunctionalCodeEnvelopeLevel1() {
+    return functionalCodeEnvelopeLevel1;
+  }
+
+
+  /**
+   * Gets the value of the 'senderAddressEnvelopeLevel2' field.
+   * @return The value of the 'senderAddressEnvelopeLevel2' field.
+   */
+  public java.lang.String getSenderAddressEnvelopeLevel2() {
+    return senderAddressEnvelopeLevel2;
+  }
+
+
+  /**
+   * Gets the value of the 'receiverAddressEnvelopeLevel2' field.
+   * @return The value of the 'receiverAddressEnvelopeLevel2' field.
+   */
+  public java.lang.String getReceiverAddressEnvelopeLevel2() {
+    return receiverAddressEnvelopeLevel2;
+  }
+
+
+  /**
+   * Gets the value of the 'functionalCodeEnvelopeLevel2' field.
+   * @return The value of the 'functionalCodeEnvelopeLevel2' field.
+   */
+  public java.lang.String getFunctionalCodeEnvelopeLevel2() {
+    return functionalCodeEnvelopeLevel2;
   }
 
 
@@ -407,6 +547,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<DocumentEvent>
     implements org.apache.avro.data.RecordBuilder<DocumentEvent> {
 
+    private java.lang.String businessDocumentId;
     private java.lang.String containingParentId;
     private java.lang.String containingParentType;
     private java.lang.String containingParentLevel;
@@ -419,7 +560,12 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String documentStandardVersion;
     private java.lang.String documentType;
     private java.lang.String envelopeVersion;
+    private java.lang.String eventId;
+    private java.lang.Long eventTimestamp;
+    private com.opentext.bn.converters.avro.entity.PayloadRef fileInfo;
+    private com.opentext.bn.converters.avro.entity.PayloadRef.Builder fileInfoBuilder;
     private java.lang.String introspectionSource;
+    private com.opentext.bn.converters.avro.entity.IntrospectionType introspectionType;
     private java.lang.String processId;
     private java.lang.String receiverAddress;
     private java.lang.String senderAddress;
@@ -427,8 +573,12 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String sentTime;
     private java.lang.String taskId;
     private java.lang.String transactionId;
-    private com.opentext.bn.converters.avro.entity.PayloadRef fileInfo;
-    private com.opentext.bn.converters.avro.entity.PayloadRef.Builder fileInfoBuilder;
+    private java.lang.String senderAddressEnvelopeLevel1;
+    private java.lang.String receiverAddressEnvelopeLevel1;
+    private java.lang.String functionalCodeEnvelopeLevel1;
+    private java.lang.String senderAddressEnvelopeLevel2;
+    private java.lang.String receiverAddressEnvelopeLevel2;
+    private java.lang.String functionalCodeEnvelopeLevel2;
 
     /** Creates a new Builder */
     private Builder() {
@@ -441,92 +591,132 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
      */
     private Builder(com.opentext.bn.converters.avro.entity.DocumentEvent.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.containingParentId)) {
-        this.containingParentId = data().deepCopy(fields()[0].schema(), other.containingParentId);
+      if (isValidValue(fields()[0], other.businessDocumentId)) {
+        this.businessDocumentId = data().deepCopy(fields()[0].schema(), other.businessDocumentId);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.containingParentType)) {
-        this.containingParentType = data().deepCopy(fields()[1].schema(), other.containingParentType);
+      if (isValidValue(fields()[1], other.containingParentId)) {
+        this.containingParentId = data().deepCopy(fields()[1].schema(), other.containingParentId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.containingParentLevel)) {
-        this.containingParentLevel = data().deepCopy(fields()[2].schema(), other.containingParentLevel);
+      if (isValidValue(fields()[2], other.containingParentType)) {
+        this.containingParentType = data().deepCopy(fields()[2].schema(), other.containingParentType);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.controlNumber)) {
-        this.controlNumber = data().deepCopy(fields()[3].schema(), other.controlNumber);
+      if (isValidValue(fields()[3], other.containingParentLevel)) {
+        this.containingParentLevel = data().deepCopy(fields()[3].schema(), other.containingParentLevel);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.controlNumberLevel1)) {
-        this.controlNumberLevel1 = data().deepCopy(fields()[4].schema(), other.controlNumberLevel1);
+      if (isValidValue(fields()[4], other.controlNumber)) {
+        this.controlNumber = data().deepCopy(fields()[4].schema(), other.controlNumber);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.controlNumberLevel2)) {
-        this.controlNumberLevel2 = data().deepCopy(fields()[5].schema(), other.controlNumberLevel2);
+      if (isValidValue(fields()[5], other.controlNumberLevel1)) {
+        this.controlNumberLevel1 = data().deepCopy(fields()[5].schema(), other.controlNumberLevel1);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.contentKeys)) {
-        this.contentKeys = data().deepCopy(fields()[6].schema(), other.contentKeys);
+      if (isValidValue(fields()[6], other.controlNumberLevel2)) {
+        this.controlNumberLevel2 = data().deepCopy(fields()[6].schema(), other.controlNumberLevel2);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.documentId)) {
-        this.documentId = data().deepCopy(fields()[7].schema(), other.documentId);
+      if (isValidValue(fields()[7], other.contentKeys)) {
+        this.contentKeys = data().deepCopy(fields()[7].schema(), other.contentKeys);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.documentStandard)) {
-        this.documentStandard = data().deepCopy(fields()[8].schema(), other.documentStandard);
+      if (isValidValue(fields()[8], other.documentId)) {
+        this.documentId = data().deepCopy(fields()[8].schema(), other.documentId);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.documentStandardVersion)) {
-        this.documentStandardVersion = data().deepCopy(fields()[9].schema(), other.documentStandardVersion);
+      if (isValidValue(fields()[9], other.documentStandard)) {
+        this.documentStandard = data().deepCopy(fields()[9].schema(), other.documentStandard);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.documentType)) {
-        this.documentType = data().deepCopy(fields()[10].schema(), other.documentType);
+      if (isValidValue(fields()[10], other.documentStandardVersion)) {
+        this.documentStandardVersion = data().deepCopy(fields()[10].schema(), other.documentStandardVersion);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.envelopeVersion)) {
-        this.envelopeVersion = data().deepCopy(fields()[11].schema(), other.envelopeVersion);
+      if (isValidValue(fields()[11], other.documentType)) {
+        this.documentType = data().deepCopy(fields()[11].schema(), other.documentType);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.introspectionSource)) {
-        this.introspectionSource = data().deepCopy(fields()[12].schema(), other.introspectionSource);
+      if (isValidValue(fields()[12], other.envelopeVersion)) {
+        this.envelopeVersion = data().deepCopy(fields()[12].schema(), other.envelopeVersion);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.processId)) {
-        this.processId = data().deepCopy(fields()[13].schema(), other.processId);
+      if (isValidValue(fields()[13], other.eventId)) {
+        this.eventId = data().deepCopy(fields()[13].schema(), other.eventId);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.receiverAddress)) {
-        this.receiverAddress = data().deepCopy(fields()[14].schema(), other.receiverAddress);
+      if (isValidValue(fields()[14], other.eventTimestamp)) {
+        this.eventTimestamp = data().deepCopy(fields()[14].schema(), other.eventTimestamp);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.senderAddress)) {
-        this.senderAddress = data().deepCopy(fields()[15].schema(), other.senderAddress);
+      if (isValidValue(fields()[15], other.fileInfo)) {
+        this.fileInfo = data().deepCopy(fields()[15].schema(), other.fileInfo);
         fieldSetFlags()[15] = true;
-      }
-      if (isValidValue(fields()[16], other.sentDate)) {
-        this.sentDate = data().deepCopy(fields()[16].schema(), other.sentDate);
-        fieldSetFlags()[16] = true;
-      }
-      if (isValidValue(fields()[17], other.sentTime)) {
-        this.sentTime = data().deepCopy(fields()[17].schema(), other.sentTime);
-        fieldSetFlags()[17] = true;
-      }
-      if (isValidValue(fields()[18], other.taskId)) {
-        this.taskId = data().deepCopy(fields()[18].schema(), other.taskId);
-        fieldSetFlags()[18] = true;
-      }
-      if (isValidValue(fields()[19], other.transactionId)) {
-        this.transactionId = data().deepCopy(fields()[19].schema(), other.transactionId);
-        fieldSetFlags()[19] = true;
-      }
-      if (isValidValue(fields()[20], other.fileInfo)) {
-        this.fileInfo = data().deepCopy(fields()[20].schema(), other.fileInfo);
-        fieldSetFlags()[20] = true;
       }
       if (other.hasFileInfoBuilder()) {
         this.fileInfoBuilder = com.opentext.bn.converters.avro.entity.PayloadRef.newBuilder(other.getFileInfoBuilder());
+      }
+      if (isValidValue(fields()[16], other.introspectionSource)) {
+        this.introspectionSource = data().deepCopy(fields()[16].schema(), other.introspectionSource);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.introspectionType)) {
+        this.introspectionType = data().deepCopy(fields()[17].schema(), other.introspectionType);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.processId)) {
+        this.processId = data().deepCopy(fields()[18].schema(), other.processId);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.receiverAddress)) {
+        this.receiverAddress = data().deepCopy(fields()[19].schema(), other.receiverAddress);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.senderAddress)) {
+        this.senderAddress = data().deepCopy(fields()[20].schema(), other.senderAddress);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.sentDate)) {
+        this.sentDate = data().deepCopy(fields()[21].schema(), other.sentDate);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.sentTime)) {
+        this.sentTime = data().deepCopy(fields()[22].schema(), other.sentTime);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.taskId)) {
+        this.taskId = data().deepCopy(fields()[23].schema(), other.taskId);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.transactionId)) {
+        this.transactionId = data().deepCopy(fields()[24].schema(), other.transactionId);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.senderAddressEnvelopeLevel1)) {
+        this.senderAddressEnvelopeLevel1 = data().deepCopy(fields()[25].schema(), other.senderAddressEnvelopeLevel1);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.receiverAddressEnvelopeLevel1)) {
+        this.receiverAddressEnvelopeLevel1 = data().deepCopy(fields()[26].schema(), other.receiverAddressEnvelopeLevel1);
+        fieldSetFlags()[26] = true;
+      }
+      if (isValidValue(fields()[27], other.functionalCodeEnvelopeLevel1)) {
+        this.functionalCodeEnvelopeLevel1 = data().deepCopy(fields()[27].schema(), other.functionalCodeEnvelopeLevel1);
+        fieldSetFlags()[27] = true;
+      }
+      if (isValidValue(fields()[28], other.senderAddressEnvelopeLevel2)) {
+        this.senderAddressEnvelopeLevel2 = data().deepCopy(fields()[28].schema(), other.senderAddressEnvelopeLevel2);
+        fieldSetFlags()[28] = true;
+      }
+      if (isValidValue(fields()[29], other.receiverAddressEnvelopeLevel2)) {
+        this.receiverAddressEnvelopeLevel2 = data().deepCopy(fields()[29].schema(), other.receiverAddressEnvelopeLevel2);
+        fieldSetFlags()[29] = true;
+      }
+      if (isValidValue(fields()[30], other.functionalCodeEnvelopeLevel2)) {
+        this.functionalCodeEnvelopeLevel2 = data().deepCopy(fields()[30].schema(), other.functionalCodeEnvelopeLevel2);
+        fieldSetFlags()[30] = true;
       }
     }
 
@@ -536,91 +726,170 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
      */
     private Builder(com.opentext.bn.converters.avro.entity.DocumentEvent other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.containingParentId)) {
-        this.containingParentId = data().deepCopy(fields()[0].schema(), other.containingParentId);
+      if (isValidValue(fields()[0], other.businessDocumentId)) {
+        this.businessDocumentId = data().deepCopy(fields()[0].schema(), other.businessDocumentId);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.containingParentType)) {
-        this.containingParentType = data().deepCopy(fields()[1].schema(), other.containingParentType);
+      if (isValidValue(fields()[1], other.containingParentId)) {
+        this.containingParentId = data().deepCopy(fields()[1].schema(), other.containingParentId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.containingParentLevel)) {
-        this.containingParentLevel = data().deepCopy(fields()[2].schema(), other.containingParentLevel);
+      if (isValidValue(fields()[2], other.containingParentType)) {
+        this.containingParentType = data().deepCopy(fields()[2].schema(), other.containingParentType);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.controlNumber)) {
-        this.controlNumber = data().deepCopy(fields()[3].schema(), other.controlNumber);
+      if (isValidValue(fields()[3], other.containingParentLevel)) {
+        this.containingParentLevel = data().deepCopy(fields()[3].schema(), other.containingParentLevel);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.controlNumberLevel1)) {
-        this.controlNumberLevel1 = data().deepCopy(fields()[4].schema(), other.controlNumberLevel1);
+      if (isValidValue(fields()[4], other.controlNumber)) {
+        this.controlNumber = data().deepCopy(fields()[4].schema(), other.controlNumber);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.controlNumberLevel2)) {
-        this.controlNumberLevel2 = data().deepCopy(fields()[5].schema(), other.controlNumberLevel2);
+      if (isValidValue(fields()[5], other.controlNumberLevel1)) {
+        this.controlNumberLevel1 = data().deepCopy(fields()[5].schema(), other.controlNumberLevel1);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.contentKeys)) {
-        this.contentKeys = data().deepCopy(fields()[6].schema(), other.contentKeys);
+      if (isValidValue(fields()[6], other.controlNumberLevel2)) {
+        this.controlNumberLevel2 = data().deepCopy(fields()[6].schema(), other.controlNumberLevel2);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.documentId)) {
-        this.documentId = data().deepCopy(fields()[7].schema(), other.documentId);
+      if (isValidValue(fields()[7], other.contentKeys)) {
+        this.contentKeys = data().deepCopy(fields()[7].schema(), other.contentKeys);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.documentStandard)) {
-        this.documentStandard = data().deepCopy(fields()[8].schema(), other.documentStandard);
+      if (isValidValue(fields()[8], other.documentId)) {
+        this.documentId = data().deepCopy(fields()[8].schema(), other.documentId);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.documentStandardVersion)) {
-        this.documentStandardVersion = data().deepCopy(fields()[9].schema(), other.documentStandardVersion);
+      if (isValidValue(fields()[9], other.documentStandard)) {
+        this.documentStandard = data().deepCopy(fields()[9].schema(), other.documentStandard);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.documentType)) {
-        this.documentType = data().deepCopy(fields()[10].schema(), other.documentType);
+      if (isValidValue(fields()[10], other.documentStandardVersion)) {
+        this.documentStandardVersion = data().deepCopy(fields()[10].schema(), other.documentStandardVersion);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.envelopeVersion)) {
-        this.envelopeVersion = data().deepCopy(fields()[11].schema(), other.envelopeVersion);
+      if (isValidValue(fields()[11], other.documentType)) {
+        this.documentType = data().deepCopy(fields()[11].schema(), other.documentType);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.introspectionSource)) {
-        this.introspectionSource = data().deepCopy(fields()[12].schema(), other.introspectionSource);
+      if (isValidValue(fields()[12], other.envelopeVersion)) {
+        this.envelopeVersion = data().deepCopy(fields()[12].schema(), other.envelopeVersion);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.processId)) {
-        this.processId = data().deepCopy(fields()[13].schema(), other.processId);
+      if (isValidValue(fields()[13], other.eventId)) {
+        this.eventId = data().deepCopy(fields()[13].schema(), other.eventId);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.receiverAddress)) {
-        this.receiverAddress = data().deepCopy(fields()[14].schema(), other.receiverAddress);
+      if (isValidValue(fields()[14], other.eventTimestamp)) {
+        this.eventTimestamp = data().deepCopy(fields()[14].schema(), other.eventTimestamp);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.senderAddress)) {
-        this.senderAddress = data().deepCopy(fields()[15].schema(), other.senderAddress);
+      if (isValidValue(fields()[15], other.fileInfo)) {
+        this.fileInfo = data().deepCopy(fields()[15].schema(), other.fileInfo);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.sentDate)) {
-        this.sentDate = data().deepCopy(fields()[16].schema(), other.sentDate);
+      this.fileInfoBuilder = null;
+      if (isValidValue(fields()[16], other.introspectionSource)) {
+        this.introspectionSource = data().deepCopy(fields()[16].schema(), other.introspectionSource);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.sentTime)) {
-        this.sentTime = data().deepCopy(fields()[17].schema(), other.sentTime);
+      if (isValidValue(fields()[17], other.introspectionType)) {
+        this.introspectionType = data().deepCopy(fields()[17].schema(), other.introspectionType);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.taskId)) {
-        this.taskId = data().deepCopy(fields()[18].schema(), other.taskId);
+      if (isValidValue(fields()[18], other.processId)) {
+        this.processId = data().deepCopy(fields()[18].schema(), other.processId);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.transactionId)) {
-        this.transactionId = data().deepCopy(fields()[19].schema(), other.transactionId);
+      if (isValidValue(fields()[19], other.receiverAddress)) {
+        this.receiverAddress = data().deepCopy(fields()[19].schema(), other.receiverAddress);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.fileInfo)) {
-        this.fileInfo = data().deepCopy(fields()[20].schema(), other.fileInfo);
+      if (isValidValue(fields()[20], other.senderAddress)) {
+        this.senderAddress = data().deepCopy(fields()[20].schema(), other.senderAddress);
         fieldSetFlags()[20] = true;
       }
-      this.fileInfoBuilder = null;
+      if (isValidValue(fields()[21], other.sentDate)) {
+        this.sentDate = data().deepCopy(fields()[21].schema(), other.sentDate);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.sentTime)) {
+        this.sentTime = data().deepCopy(fields()[22].schema(), other.sentTime);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.taskId)) {
+        this.taskId = data().deepCopy(fields()[23].schema(), other.taskId);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.transactionId)) {
+        this.transactionId = data().deepCopy(fields()[24].schema(), other.transactionId);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.senderAddressEnvelopeLevel1)) {
+        this.senderAddressEnvelopeLevel1 = data().deepCopy(fields()[25].schema(), other.senderAddressEnvelopeLevel1);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.receiverAddressEnvelopeLevel1)) {
+        this.receiverAddressEnvelopeLevel1 = data().deepCopy(fields()[26].schema(), other.receiverAddressEnvelopeLevel1);
+        fieldSetFlags()[26] = true;
+      }
+      if (isValidValue(fields()[27], other.functionalCodeEnvelopeLevel1)) {
+        this.functionalCodeEnvelopeLevel1 = data().deepCopy(fields()[27].schema(), other.functionalCodeEnvelopeLevel1);
+        fieldSetFlags()[27] = true;
+      }
+      if (isValidValue(fields()[28], other.senderAddressEnvelopeLevel2)) {
+        this.senderAddressEnvelopeLevel2 = data().deepCopy(fields()[28].schema(), other.senderAddressEnvelopeLevel2);
+        fieldSetFlags()[28] = true;
+      }
+      if (isValidValue(fields()[29], other.receiverAddressEnvelopeLevel2)) {
+        this.receiverAddressEnvelopeLevel2 = data().deepCopy(fields()[29].schema(), other.receiverAddressEnvelopeLevel2);
+        fieldSetFlags()[29] = true;
+      }
+      if (isValidValue(fields()[30], other.functionalCodeEnvelopeLevel2)) {
+        this.functionalCodeEnvelopeLevel2 = data().deepCopy(fields()[30].schema(), other.functionalCodeEnvelopeLevel2);
+        fieldSetFlags()[30] = true;
+      }
+    }
+
+    /**
+      * Gets the value of the 'businessDocumentId' field.
+      * @return The value.
+      */
+    public java.lang.String getBusinessDocumentId() {
+      return businessDocumentId;
+    }
+
+    /**
+      * Sets the value of the 'businessDocumentId' field.
+      * @param value The value of 'businessDocumentId'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setBusinessDocumentId(java.lang.String value) {
+      validate(fields()[0], value);
+      this.businessDocumentId = value;
+      fieldSetFlags()[0] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'businessDocumentId' field has been set.
+      * @return True if the 'businessDocumentId' field has been set, false otherwise.
+      */
+    public boolean hasBusinessDocumentId() {
+      return fieldSetFlags()[0];
+    }
+
+
+    /**
+      * Clears the value of the 'businessDocumentId' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearBusinessDocumentId() {
+      businessDocumentId = null;
+      fieldSetFlags()[0] = false;
+      return this;
     }
 
     /**
@@ -637,9 +906,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setContainingParentId(java.lang.String value) {
-      validate(fields()[0], value);
+      validate(fields()[1], value);
       this.containingParentId = value;
-      fieldSetFlags()[0] = true;
+      fieldSetFlags()[1] = true;
       return this;
     }
 
@@ -648,7 +917,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'containingParentId' field has been set, false otherwise.
       */
     public boolean hasContainingParentId() {
-      return fieldSetFlags()[0];
+      return fieldSetFlags()[1];
     }
 
 
@@ -658,7 +927,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearContainingParentId() {
       containingParentId = null;
-      fieldSetFlags()[0] = false;
+      fieldSetFlags()[1] = false;
       return this;
     }
 
@@ -676,9 +945,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setContainingParentType(java.lang.String value) {
-      validate(fields()[1], value);
+      validate(fields()[2], value);
       this.containingParentType = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[2] = true;
       return this;
     }
 
@@ -687,7 +956,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'containingParentType' field has been set, false otherwise.
       */
     public boolean hasContainingParentType() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[2];
     }
 
 
@@ -697,7 +966,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearContainingParentType() {
       containingParentType = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
@@ -715,9 +984,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setContainingParentLevel(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.containingParentLevel = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -726,7 +995,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'containingParentLevel' field has been set, false otherwise.
       */
     public boolean hasContainingParentLevel() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -736,7 +1005,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearContainingParentLevel() {
       containingParentLevel = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -754,9 +1023,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setControlNumber(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.controlNumber = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -765,7 +1034,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'controlNumber' field has been set, false otherwise.
       */
     public boolean hasControlNumber() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -775,7 +1044,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearControlNumber() {
       controlNumber = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -793,9 +1062,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setControlNumberLevel1(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.controlNumberLevel1 = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -804,7 +1073,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'controlNumberLevel1' field has been set, false otherwise.
       */
     public boolean hasControlNumberLevel1() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -814,7 +1083,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearControlNumberLevel1() {
       controlNumberLevel1 = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -832,9 +1101,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setControlNumberLevel2(java.lang.String value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.controlNumberLevel2 = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -843,7 +1112,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'controlNumberLevel2' field has been set, false otherwise.
       */
     public boolean hasControlNumberLevel2() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -853,7 +1122,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearControlNumberLevel2() {
       controlNumberLevel2 = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -871,9 +1140,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setContentKeys(java.util.List<com.opentext.bn.converters.avro.entity.ContentKey> value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.contentKeys = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -882,7 +1151,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'contentKeys' field has been set, false otherwise.
       */
     public boolean hasContentKeys() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -892,7 +1161,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearContentKeys() {
       contentKeys = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -910,9 +1179,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setDocumentId(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.documentId = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -921,7 +1190,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'documentId' field has been set, false otherwise.
       */
     public boolean hasDocumentId() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -931,7 +1200,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearDocumentId() {
       documentId = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -949,9 +1218,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setDocumentStandard(java.lang.String value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.documentStandard = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -960,7 +1229,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'documentStandard' field has been set, false otherwise.
       */
     public boolean hasDocumentStandard() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -970,7 +1239,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearDocumentStandard() {
       documentStandard = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -988,9 +1257,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setDocumentStandardVersion(java.lang.String value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.documentStandardVersion = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -999,7 +1268,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'documentStandardVersion' field has been set, false otherwise.
       */
     public boolean hasDocumentStandardVersion() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -1009,7 +1278,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearDocumentStandardVersion() {
       documentStandardVersion = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -1027,9 +1296,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setDocumentType(java.lang.String value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.documentType = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -1038,7 +1307,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'documentType' field has been set, false otherwise.
       */
     public boolean hasDocumentType() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -1048,7 +1317,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearDocumentType() {
       documentType = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -1066,9 +1335,9 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setEnvelopeVersion(java.lang.String value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.envelopeVersion = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1077,7 +1346,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'envelopeVersion' field has been set, false otherwise.
       */
     public boolean hasEnvelopeVersion() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1087,319 +1356,85 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearEnvelopeVersion() {
       envelopeVersion = null;
-      fieldSetFlags()[11] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'introspectionSource' field.
-      * @return The value.
-      */
-    public java.lang.String getIntrospectionSource() {
-      return introspectionSource;
-    }
-
-    /**
-      * Sets the value of the 'introspectionSource' field.
-      * @param value The value of 'introspectionSource'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setIntrospectionSource(java.lang.String value) {
-      validate(fields()[12], value);
-      this.introspectionSource = value;
-      fieldSetFlags()[12] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'introspectionSource' field has been set.
-      * @return True if the 'introspectionSource' field has been set, false otherwise.
-      */
-    public boolean hasIntrospectionSource() {
-      return fieldSetFlags()[12];
-    }
-
-
-    /**
-      * Clears the value of the 'introspectionSource' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearIntrospectionSource() {
-      introspectionSource = null;
       fieldSetFlags()[12] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'processId' field.
+      * Gets the value of the 'eventId' field.
       * @return The value.
       */
-    public java.lang.String getProcessId() {
-      return processId;
+    public java.lang.String getEventId() {
+      return eventId;
     }
 
     /**
-      * Sets the value of the 'processId' field.
-      * @param value The value of 'processId'.
+      * Sets the value of the 'eventId' field.
+      * @param value The value of 'eventId'.
       * @return This builder.
       */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setProcessId(java.lang.String value) {
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setEventId(java.lang.String value) {
       validate(fields()[13], value);
-      this.processId = value;
+      this.eventId = value;
       fieldSetFlags()[13] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'processId' field has been set.
-      * @return True if the 'processId' field has been set, false otherwise.
+      * Checks whether the 'eventId' field has been set.
+      * @return True if the 'eventId' field has been set, false otherwise.
       */
-    public boolean hasProcessId() {
+    public boolean hasEventId() {
       return fieldSetFlags()[13];
     }
 
 
     /**
-      * Clears the value of the 'processId' field.
+      * Clears the value of the 'eventId' field.
       * @return This builder.
       */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearProcessId() {
-      processId = null;
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearEventId() {
+      eventId = null;
       fieldSetFlags()[13] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'receiverAddress' field.
+      * Gets the value of the 'eventTimestamp' field.
       * @return The value.
       */
-    public java.lang.String getReceiverAddress() {
-      return receiverAddress;
+    public java.lang.Long getEventTimestamp() {
+      return eventTimestamp;
     }
 
     /**
-      * Sets the value of the 'receiverAddress' field.
-      * @param value The value of 'receiverAddress'.
+      * Sets the value of the 'eventTimestamp' field.
+      * @param value The value of 'eventTimestamp'.
       * @return This builder.
       */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setReceiverAddress(java.lang.String value) {
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setEventTimestamp(java.lang.Long value) {
       validate(fields()[14], value);
-      this.receiverAddress = value;
+      this.eventTimestamp = value;
       fieldSetFlags()[14] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'receiverAddress' field has been set.
-      * @return True if the 'receiverAddress' field has been set, false otherwise.
+      * Checks whether the 'eventTimestamp' field has been set.
+      * @return True if the 'eventTimestamp' field has been set, false otherwise.
       */
-    public boolean hasReceiverAddress() {
+    public boolean hasEventTimestamp() {
       return fieldSetFlags()[14];
     }
 
 
     /**
-      * Clears the value of the 'receiverAddress' field.
+      * Clears the value of the 'eventTimestamp' field.
       * @return This builder.
       */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearReceiverAddress() {
-      receiverAddress = null;
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearEventTimestamp() {
+      eventTimestamp = null;
       fieldSetFlags()[14] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'senderAddress' field.
-      * @return The value.
-      */
-    public java.lang.String getSenderAddress() {
-      return senderAddress;
-    }
-
-    /**
-      * Sets the value of the 'senderAddress' field.
-      * @param value The value of 'senderAddress'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setSenderAddress(java.lang.String value) {
-      validate(fields()[15], value);
-      this.senderAddress = value;
-      fieldSetFlags()[15] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'senderAddress' field has been set.
-      * @return True if the 'senderAddress' field has been set, false otherwise.
-      */
-    public boolean hasSenderAddress() {
-      return fieldSetFlags()[15];
-    }
-
-
-    /**
-      * Clears the value of the 'senderAddress' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearSenderAddress() {
-      senderAddress = null;
-      fieldSetFlags()[15] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'sentDate' field.
-      * @return The value.
-      */
-    public java.lang.String getSentDate() {
-      return sentDate;
-    }
-
-    /**
-      * Sets the value of the 'sentDate' field.
-      * @param value The value of 'sentDate'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setSentDate(java.lang.String value) {
-      validate(fields()[16], value);
-      this.sentDate = value;
-      fieldSetFlags()[16] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'sentDate' field has been set.
-      * @return True if the 'sentDate' field has been set, false otherwise.
-      */
-    public boolean hasSentDate() {
-      return fieldSetFlags()[16];
-    }
-
-
-    /**
-      * Clears the value of the 'sentDate' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearSentDate() {
-      sentDate = null;
-      fieldSetFlags()[16] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'sentTime' field.
-      * @return The value.
-      */
-    public java.lang.String getSentTime() {
-      return sentTime;
-    }
-
-    /**
-      * Sets the value of the 'sentTime' field.
-      * @param value The value of 'sentTime'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setSentTime(java.lang.String value) {
-      validate(fields()[17], value);
-      this.sentTime = value;
-      fieldSetFlags()[17] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'sentTime' field has been set.
-      * @return True if the 'sentTime' field has been set, false otherwise.
-      */
-    public boolean hasSentTime() {
-      return fieldSetFlags()[17];
-    }
-
-
-    /**
-      * Clears the value of the 'sentTime' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearSentTime() {
-      sentTime = null;
-      fieldSetFlags()[17] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'taskId' field.
-      * @return The value.
-      */
-    public java.lang.String getTaskId() {
-      return taskId;
-    }
-
-    /**
-      * Sets the value of the 'taskId' field.
-      * @param value The value of 'taskId'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setTaskId(java.lang.String value) {
-      validate(fields()[18], value);
-      this.taskId = value;
-      fieldSetFlags()[18] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'taskId' field has been set.
-      * @return True if the 'taskId' field has been set, false otherwise.
-      */
-    public boolean hasTaskId() {
-      return fieldSetFlags()[18];
-    }
-
-
-    /**
-      * Clears the value of the 'taskId' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearTaskId() {
-      taskId = null;
-      fieldSetFlags()[18] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'transactionId' field.
-      * @return The value.
-      */
-    public java.lang.String getTransactionId() {
-      return transactionId;
-    }
-
-    /**
-      * Sets the value of the 'transactionId' field.
-      * @param value The value of 'transactionId'.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setTransactionId(java.lang.String value) {
-      validate(fields()[19], value);
-      this.transactionId = value;
-      fieldSetFlags()[19] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'transactionId' field has been set.
-      * @return True if the 'transactionId' field has been set, false otherwise.
-      */
-    public boolean hasTransactionId() {
-      return fieldSetFlags()[19];
-    }
-
-
-    /**
-      * Clears the value of the 'transactionId' field.
-      * @return This builder.
-      */
-    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearTransactionId() {
-      transactionId = null;
-      fieldSetFlags()[19] = false;
       return this;
     }
 
@@ -1417,10 +1452,10 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setFileInfo(com.opentext.bn.converters.avro.entity.PayloadRef value) {
-      validate(fields()[20], value);
+      validate(fields()[15], value);
       this.fileInfoBuilder = null;
       this.fileInfo = value;
-      fieldSetFlags()[20] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1429,7 +1464,7 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'fileInfo' field has been set, false otherwise.
       */
     public boolean hasFileInfo() {
-      return fieldSetFlags()[20];
+      return fieldSetFlags()[15];
     }
 
     /**
@@ -1473,7 +1508,592 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
     public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearFileInfo() {
       fileInfo = null;
       fileInfoBuilder = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'introspectionSource' field.
+      * @return The value.
+      */
+    public java.lang.String getIntrospectionSource() {
+      return introspectionSource;
+    }
+
+    /**
+      * Sets the value of the 'introspectionSource' field.
+      * @param value The value of 'introspectionSource'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setIntrospectionSource(java.lang.String value) {
+      validate(fields()[16], value);
+      this.introspectionSource = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'introspectionSource' field has been set.
+      * @return True if the 'introspectionSource' field has been set, false otherwise.
+      */
+    public boolean hasIntrospectionSource() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'introspectionSource' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearIntrospectionSource() {
+      introspectionSource = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'introspectionType' field.
+      * @return The value.
+      */
+    public com.opentext.bn.converters.avro.entity.IntrospectionType getIntrospectionType() {
+      return introspectionType;
+    }
+
+    /**
+      * Sets the value of the 'introspectionType' field.
+      * @param value The value of 'introspectionType'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setIntrospectionType(com.opentext.bn.converters.avro.entity.IntrospectionType value) {
+      validate(fields()[17], value);
+      this.introspectionType = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'introspectionType' field has been set.
+      * @return True if the 'introspectionType' field has been set, false otherwise.
+      */
+    public boolean hasIntrospectionType() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'introspectionType' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearIntrospectionType() {
+      introspectionType = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'processId' field.
+      * @return The value.
+      */
+    public java.lang.String getProcessId() {
+      return processId;
+    }
+
+    /**
+      * Sets the value of the 'processId' field.
+      * @param value The value of 'processId'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setProcessId(java.lang.String value) {
+      validate(fields()[18], value);
+      this.processId = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'processId' field has been set.
+      * @return True if the 'processId' field has been set, false otherwise.
+      */
+    public boolean hasProcessId() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'processId' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearProcessId() {
+      processId = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'receiverAddress' field.
+      * @return The value.
+      */
+    public java.lang.String getReceiverAddress() {
+      return receiverAddress;
+    }
+
+    /**
+      * Sets the value of the 'receiverAddress' field.
+      * @param value The value of 'receiverAddress'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setReceiverAddress(java.lang.String value) {
+      validate(fields()[19], value);
+      this.receiverAddress = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'receiverAddress' field has been set.
+      * @return True if the 'receiverAddress' field has been set, false otherwise.
+      */
+    public boolean hasReceiverAddress() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'receiverAddress' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearReceiverAddress() {
+      receiverAddress = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'senderAddress' field.
+      * @return The value.
+      */
+    public java.lang.String getSenderAddress() {
+      return senderAddress;
+    }
+
+    /**
+      * Sets the value of the 'senderAddress' field.
+      * @param value The value of 'senderAddress'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setSenderAddress(java.lang.String value) {
+      validate(fields()[20], value);
+      this.senderAddress = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'senderAddress' field has been set.
+      * @return True if the 'senderAddress' field has been set, false otherwise.
+      */
+    public boolean hasSenderAddress() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'senderAddress' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearSenderAddress() {
+      senderAddress = null;
       fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'sentDate' field.
+      * @return The value.
+      */
+    public java.lang.String getSentDate() {
+      return sentDate;
+    }
+
+    /**
+      * Sets the value of the 'sentDate' field.
+      * @param value The value of 'sentDate'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setSentDate(java.lang.String value) {
+      validate(fields()[21], value);
+      this.sentDate = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'sentDate' field has been set.
+      * @return True if the 'sentDate' field has been set, false otherwise.
+      */
+    public boolean hasSentDate() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'sentDate' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearSentDate() {
+      sentDate = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'sentTime' field.
+      * @return The value.
+      */
+    public java.lang.String getSentTime() {
+      return sentTime;
+    }
+
+    /**
+      * Sets the value of the 'sentTime' field.
+      * @param value The value of 'sentTime'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setSentTime(java.lang.String value) {
+      validate(fields()[22], value);
+      this.sentTime = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'sentTime' field has been set.
+      * @return True if the 'sentTime' field has been set, false otherwise.
+      */
+    public boolean hasSentTime() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'sentTime' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearSentTime() {
+      sentTime = null;
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'taskId' field.
+      * @return The value.
+      */
+    public java.lang.String getTaskId() {
+      return taskId;
+    }
+
+    /**
+      * Sets the value of the 'taskId' field.
+      * @param value The value of 'taskId'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setTaskId(java.lang.String value) {
+      validate(fields()[23], value);
+      this.taskId = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'taskId' field has been set.
+      * @return True if the 'taskId' field has been set, false otherwise.
+      */
+    public boolean hasTaskId() {
+      return fieldSetFlags()[23];
+    }
+
+
+    /**
+      * Clears the value of the 'taskId' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearTaskId() {
+      taskId = null;
+      fieldSetFlags()[23] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'transactionId' field.
+      * @return The value.
+      */
+    public java.lang.String getTransactionId() {
+      return transactionId;
+    }
+
+    /**
+      * Sets the value of the 'transactionId' field.
+      * @param value The value of 'transactionId'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setTransactionId(java.lang.String value) {
+      validate(fields()[24], value);
+      this.transactionId = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'transactionId' field has been set.
+      * @return True if the 'transactionId' field has been set, false otherwise.
+      */
+    public boolean hasTransactionId() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'transactionId' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearTransactionId() {
+      transactionId = null;
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'senderAddressEnvelopeLevel1' field.
+      * @return The value.
+      */
+    public java.lang.String getSenderAddressEnvelopeLevel1() {
+      return senderAddressEnvelopeLevel1;
+    }
+
+    /**
+      * Sets the value of the 'senderAddressEnvelopeLevel1' field.
+      * @param value The value of 'senderAddressEnvelopeLevel1'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setSenderAddressEnvelopeLevel1(java.lang.String value) {
+      validate(fields()[25], value);
+      this.senderAddressEnvelopeLevel1 = value;
+      fieldSetFlags()[25] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'senderAddressEnvelopeLevel1' field has been set.
+      * @return True if the 'senderAddressEnvelopeLevel1' field has been set, false otherwise.
+      */
+    public boolean hasSenderAddressEnvelopeLevel1() {
+      return fieldSetFlags()[25];
+    }
+
+
+    /**
+      * Clears the value of the 'senderAddressEnvelopeLevel1' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearSenderAddressEnvelopeLevel1() {
+      senderAddressEnvelopeLevel1 = null;
+      fieldSetFlags()[25] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'receiverAddressEnvelopeLevel1' field.
+      * @return The value.
+      */
+    public java.lang.String getReceiverAddressEnvelopeLevel1() {
+      return receiverAddressEnvelopeLevel1;
+    }
+
+    /**
+      * Sets the value of the 'receiverAddressEnvelopeLevel1' field.
+      * @param value The value of 'receiverAddressEnvelopeLevel1'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setReceiverAddressEnvelopeLevel1(java.lang.String value) {
+      validate(fields()[26], value);
+      this.receiverAddressEnvelopeLevel1 = value;
+      fieldSetFlags()[26] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'receiverAddressEnvelopeLevel1' field has been set.
+      * @return True if the 'receiverAddressEnvelopeLevel1' field has been set, false otherwise.
+      */
+    public boolean hasReceiverAddressEnvelopeLevel1() {
+      return fieldSetFlags()[26];
+    }
+
+
+    /**
+      * Clears the value of the 'receiverAddressEnvelopeLevel1' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearReceiverAddressEnvelopeLevel1() {
+      receiverAddressEnvelopeLevel1 = null;
+      fieldSetFlags()[26] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'functionalCodeEnvelopeLevel1' field.
+      * @return The value.
+      */
+    public java.lang.String getFunctionalCodeEnvelopeLevel1() {
+      return functionalCodeEnvelopeLevel1;
+    }
+
+    /**
+      * Sets the value of the 'functionalCodeEnvelopeLevel1' field.
+      * @param value The value of 'functionalCodeEnvelopeLevel1'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setFunctionalCodeEnvelopeLevel1(java.lang.String value) {
+      validate(fields()[27], value);
+      this.functionalCodeEnvelopeLevel1 = value;
+      fieldSetFlags()[27] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'functionalCodeEnvelopeLevel1' field has been set.
+      * @return True if the 'functionalCodeEnvelopeLevel1' field has been set, false otherwise.
+      */
+    public boolean hasFunctionalCodeEnvelopeLevel1() {
+      return fieldSetFlags()[27];
+    }
+
+
+    /**
+      * Clears the value of the 'functionalCodeEnvelopeLevel1' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearFunctionalCodeEnvelopeLevel1() {
+      functionalCodeEnvelopeLevel1 = null;
+      fieldSetFlags()[27] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'senderAddressEnvelopeLevel2' field.
+      * @return The value.
+      */
+    public java.lang.String getSenderAddressEnvelopeLevel2() {
+      return senderAddressEnvelopeLevel2;
+    }
+
+    /**
+      * Sets the value of the 'senderAddressEnvelopeLevel2' field.
+      * @param value The value of 'senderAddressEnvelopeLevel2'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setSenderAddressEnvelopeLevel2(java.lang.String value) {
+      validate(fields()[28], value);
+      this.senderAddressEnvelopeLevel2 = value;
+      fieldSetFlags()[28] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'senderAddressEnvelopeLevel2' field has been set.
+      * @return True if the 'senderAddressEnvelopeLevel2' field has been set, false otherwise.
+      */
+    public boolean hasSenderAddressEnvelopeLevel2() {
+      return fieldSetFlags()[28];
+    }
+
+
+    /**
+      * Clears the value of the 'senderAddressEnvelopeLevel2' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearSenderAddressEnvelopeLevel2() {
+      senderAddressEnvelopeLevel2 = null;
+      fieldSetFlags()[28] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'receiverAddressEnvelopeLevel2' field.
+      * @return The value.
+      */
+    public java.lang.String getReceiverAddressEnvelopeLevel2() {
+      return receiverAddressEnvelopeLevel2;
+    }
+
+    /**
+      * Sets the value of the 'receiverAddressEnvelopeLevel2' field.
+      * @param value The value of 'receiverAddressEnvelopeLevel2'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setReceiverAddressEnvelopeLevel2(java.lang.String value) {
+      validate(fields()[29], value);
+      this.receiverAddressEnvelopeLevel2 = value;
+      fieldSetFlags()[29] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'receiverAddressEnvelopeLevel2' field has been set.
+      * @return True if the 'receiverAddressEnvelopeLevel2' field has been set, false otherwise.
+      */
+    public boolean hasReceiverAddressEnvelopeLevel2() {
+      return fieldSetFlags()[29];
+    }
+
+
+    /**
+      * Clears the value of the 'receiverAddressEnvelopeLevel2' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearReceiverAddressEnvelopeLevel2() {
+      receiverAddressEnvelopeLevel2 = null;
+      fieldSetFlags()[29] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'functionalCodeEnvelopeLevel2' field.
+      * @return The value.
+      */
+    public java.lang.String getFunctionalCodeEnvelopeLevel2() {
+      return functionalCodeEnvelopeLevel2;
+    }
+
+    /**
+      * Sets the value of the 'functionalCodeEnvelopeLevel2' field.
+      * @param value The value of 'functionalCodeEnvelopeLevel2'.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder setFunctionalCodeEnvelopeLevel2(java.lang.String value) {
+      validate(fields()[30], value);
+      this.functionalCodeEnvelopeLevel2 = value;
+      fieldSetFlags()[30] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'functionalCodeEnvelopeLevel2' field has been set.
+      * @return True if the 'functionalCodeEnvelopeLevel2' field has been set, false otherwise.
+      */
+    public boolean hasFunctionalCodeEnvelopeLevel2() {
+      return fieldSetFlags()[30];
+    }
+
+
+    /**
+      * Clears the value of the 'functionalCodeEnvelopeLevel2' field.
+      * @return This builder.
+      */
+    public com.opentext.bn.converters.avro.entity.DocumentEvent.Builder clearFunctionalCodeEnvelopeLevel2() {
+      functionalCodeEnvelopeLevel2 = null;
+      fieldSetFlags()[30] = false;
       return this;
     }
 
@@ -1482,31 +2102,41 @@ public class DocumentEvent extends org.apache.avro.specific.SpecificRecordBase i
     public DocumentEvent build() {
       try {
         DocumentEvent record = new DocumentEvent();
-        record.containingParentId = fieldSetFlags()[0] ? this.containingParentId : (java.lang.String) defaultValue(fields()[0]);
-        record.containingParentType = fieldSetFlags()[1] ? this.containingParentType : (java.lang.String) defaultValue(fields()[1]);
-        record.containingParentLevel = fieldSetFlags()[2] ? this.containingParentLevel : (java.lang.String) defaultValue(fields()[2]);
-        record.controlNumber = fieldSetFlags()[3] ? this.controlNumber : (java.lang.String) defaultValue(fields()[3]);
-        record.controlNumberLevel1 = fieldSetFlags()[4] ? this.controlNumberLevel1 : (java.lang.String) defaultValue(fields()[4]);
-        record.controlNumberLevel2 = fieldSetFlags()[5] ? this.controlNumberLevel2 : (java.lang.String) defaultValue(fields()[5]);
-        record.contentKeys = fieldSetFlags()[6] ? this.contentKeys : (java.util.List<com.opentext.bn.converters.avro.entity.ContentKey>) defaultValue(fields()[6]);
-        record.documentId = fieldSetFlags()[7] ? this.documentId : (java.lang.String) defaultValue(fields()[7]);
-        record.documentStandard = fieldSetFlags()[8] ? this.documentStandard : (java.lang.String) defaultValue(fields()[8]);
-        record.documentStandardVersion = fieldSetFlags()[9] ? this.documentStandardVersion : (java.lang.String) defaultValue(fields()[9]);
-        record.documentType = fieldSetFlags()[10] ? this.documentType : (java.lang.String) defaultValue(fields()[10]);
-        record.envelopeVersion = fieldSetFlags()[11] ? this.envelopeVersion : (java.lang.String) defaultValue(fields()[11]);
-        record.introspectionSource = fieldSetFlags()[12] ? this.introspectionSource : (java.lang.String) defaultValue(fields()[12]);
-        record.processId = fieldSetFlags()[13] ? this.processId : (java.lang.String) defaultValue(fields()[13]);
-        record.receiverAddress = fieldSetFlags()[14] ? this.receiverAddress : (java.lang.String) defaultValue(fields()[14]);
-        record.senderAddress = fieldSetFlags()[15] ? this.senderAddress : (java.lang.String) defaultValue(fields()[15]);
-        record.sentDate = fieldSetFlags()[16] ? this.sentDate : (java.lang.String) defaultValue(fields()[16]);
-        record.sentTime = fieldSetFlags()[17] ? this.sentTime : (java.lang.String) defaultValue(fields()[17]);
-        record.taskId = fieldSetFlags()[18] ? this.taskId : (java.lang.String) defaultValue(fields()[18]);
-        record.transactionId = fieldSetFlags()[19] ? this.transactionId : (java.lang.String) defaultValue(fields()[19]);
+        record.businessDocumentId = fieldSetFlags()[0] ? this.businessDocumentId : (java.lang.String) defaultValue(fields()[0]);
+        record.containingParentId = fieldSetFlags()[1] ? this.containingParentId : (java.lang.String) defaultValue(fields()[1]);
+        record.containingParentType = fieldSetFlags()[2] ? this.containingParentType : (java.lang.String) defaultValue(fields()[2]);
+        record.containingParentLevel = fieldSetFlags()[3] ? this.containingParentLevel : (java.lang.String) defaultValue(fields()[3]);
+        record.controlNumber = fieldSetFlags()[4] ? this.controlNumber : (java.lang.String) defaultValue(fields()[4]);
+        record.controlNumberLevel1 = fieldSetFlags()[5] ? this.controlNumberLevel1 : (java.lang.String) defaultValue(fields()[5]);
+        record.controlNumberLevel2 = fieldSetFlags()[6] ? this.controlNumberLevel2 : (java.lang.String) defaultValue(fields()[6]);
+        record.contentKeys = fieldSetFlags()[7] ? this.contentKeys : (java.util.List<com.opentext.bn.converters.avro.entity.ContentKey>) defaultValue(fields()[7]);
+        record.documentId = fieldSetFlags()[8] ? this.documentId : (java.lang.String) defaultValue(fields()[8]);
+        record.documentStandard = fieldSetFlags()[9] ? this.documentStandard : (java.lang.String) defaultValue(fields()[9]);
+        record.documentStandardVersion = fieldSetFlags()[10] ? this.documentStandardVersion : (java.lang.String) defaultValue(fields()[10]);
+        record.documentType = fieldSetFlags()[11] ? this.documentType : (java.lang.String) defaultValue(fields()[11]);
+        record.envelopeVersion = fieldSetFlags()[12] ? this.envelopeVersion : (java.lang.String) defaultValue(fields()[12]);
+        record.eventId = fieldSetFlags()[13] ? this.eventId : (java.lang.String) defaultValue(fields()[13]);
+        record.eventTimestamp = fieldSetFlags()[14] ? this.eventTimestamp : (java.lang.Long) defaultValue(fields()[14]);
         if (fileInfoBuilder != null) {
           record.fileInfo = this.fileInfoBuilder.build();
         } else {
-          record.fileInfo = fieldSetFlags()[20] ? this.fileInfo : (com.opentext.bn.converters.avro.entity.PayloadRef) defaultValue(fields()[20]);
+          record.fileInfo = fieldSetFlags()[15] ? this.fileInfo : (com.opentext.bn.converters.avro.entity.PayloadRef) defaultValue(fields()[15]);
         }
+        record.introspectionSource = fieldSetFlags()[16] ? this.introspectionSource : (java.lang.String) defaultValue(fields()[16]);
+        record.introspectionType = fieldSetFlags()[17] ? this.introspectionType : (com.opentext.bn.converters.avro.entity.IntrospectionType) defaultValue(fields()[17]);
+        record.processId = fieldSetFlags()[18] ? this.processId : (java.lang.String) defaultValue(fields()[18]);
+        record.receiverAddress = fieldSetFlags()[19] ? this.receiverAddress : (java.lang.String) defaultValue(fields()[19]);
+        record.senderAddress = fieldSetFlags()[20] ? this.senderAddress : (java.lang.String) defaultValue(fields()[20]);
+        record.sentDate = fieldSetFlags()[21] ? this.sentDate : (java.lang.String) defaultValue(fields()[21]);
+        record.sentTime = fieldSetFlags()[22] ? this.sentTime : (java.lang.String) defaultValue(fields()[22]);
+        record.taskId = fieldSetFlags()[23] ? this.taskId : (java.lang.String) defaultValue(fields()[23]);
+        record.transactionId = fieldSetFlags()[24] ? this.transactionId : (java.lang.String) defaultValue(fields()[24]);
+        record.senderAddressEnvelopeLevel1 = fieldSetFlags()[25] ? this.senderAddressEnvelopeLevel1 : (java.lang.String) defaultValue(fields()[25]);
+        record.receiverAddressEnvelopeLevel1 = fieldSetFlags()[26] ? this.receiverAddressEnvelopeLevel1 : (java.lang.String) defaultValue(fields()[26]);
+        record.functionalCodeEnvelopeLevel1 = fieldSetFlags()[27] ? this.functionalCodeEnvelopeLevel1 : (java.lang.String) defaultValue(fields()[27]);
+        record.senderAddressEnvelopeLevel2 = fieldSetFlags()[28] ? this.senderAddressEnvelopeLevel2 : (java.lang.String) defaultValue(fields()[28]);
+        record.receiverAddressEnvelopeLevel2 = fieldSetFlags()[29] ? this.receiverAddressEnvelopeLevel2 : (java.lang.String) defaultValue(fields()[29]);
+        record.functionalCodeEnvelopeLevel2 = fieldSetFlags()[30] ? this.functionalCodeEnvelopeLevel2 : (java.lang.String) defaultValue(fields()[30]);
         return record;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

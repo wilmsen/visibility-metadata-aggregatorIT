@@ -1,0 +1,37 @@
+{
+    "containingParentId": "Q14E-201908000000000155856659",
+    "containingParentLevel": "INTERCHANGE",
+    "containingParentType": "FILE",
+    "contentKeys": [
+      {
+        "keyName": "",
+        "keyType": "",
+        "keyValue": ""
+      }
+    ],
+    "controlNumber": "BB:XXXYYYZZZ",
+    "directDocumentCount": 0,
+    "directEnvelopeCount": 0,
+    "documentFunctionalClassification": "",
+    "documentType": "XXXYYYZZZ",
+    "envelopeId": "var_envelopeId",
+    "envelopeLevel": "INTERCHANGE",
+    "envelopeType": "ANA",
+    "envelopeVersion": "V1",
+    "eventId": "var_eventId",
+    "eventTimestamp": 1553145248,
+    "fileInfo": {
+      "payloadId": "var_payloadId",
+      "payloadType": "DSM"
+    },
+    "introspectionSource": "MDCS",
+    "processId": "var_transactionId",
+    "productionTestFlag": "Test",
+    "receiverAddress": "BB:XXXYYYZZZ",
+    "segmentTerminator": "0x0A",
+    "senderAddress": "AA:BBCCDS",
+    "sentDate": "2019-11-18",
+    "sentTime": "12:05:44",
+    "taskId": "var_taskId",
+    "transactionId": "var_transactionId"
+}
